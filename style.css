@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #1e1e1e, #111);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 36px;
+  text-shadow: 0 0 10px #fff;
+}
+
+.track {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  margin: 50px auto;
+  background: repeating-linear-gradient(
+    to right,
+    #666,
+    #666 20px,
+    #444 20px,
+    #444 40px
+  );
+  border: 4px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.start-line, .finish-line {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+}
+
+.start-line { background: red; left: 50px; }
+.finish-line { background: yellow; right: 50px; }
+
+.car {
+  position: absolute;
+  left: 60px;
+  font-size: 40px;
+  transition: left 0.1s linear;
+}
+
+.car1 { top: 40px; }
+.car2 { top: 90px; }
+.car3 { top: 140px; }
+.car4 { top: 190px; }
+
+.controls button, .bet-buttons button {
+  background: #00b894;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover, .bet-buttons button:hover {
+  background: #019270;
+  transform: scale(1.05);
+}
+
+#result {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.tables-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* aradaki boşluk */
+  margin-top: 30px;
+}
+
+.scoreboard, .participants {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: left;
+}
+
+#timer {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.participants table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.participants th, .participants td {
+  border: 1px solid #fff;
+  padding: 5px;
+  text-align: center;
+}
